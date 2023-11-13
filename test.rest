@@ -1,0 +1,18 @@
+###
+POST http://localhost:8000/api/register
+Content-Type: application/json
+# Authorization: token
+{
+    "name": "Test",
+    "email": "test@vads.co.id",
+    "password": "pass1234",
+    "c_password": "pass1234"
+}
+
+###
+POST http://localhost:8000/api/login HTTP/1.1
+Content-Type: application/json
+{
+    "email": "admin@vads.co.id",
+    "password": "Password*1"
+}
